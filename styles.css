@@ -1,27 +1,46 @@
-.section{
-	display:flex;
-	flex-flow:column wrap;
-	height:300px;
-	border:2px solid blue;
-	justify-content: center;
-	align-item:center;
-	gap:40px;
+/*  your css code here. If applicable */
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.active {
+  background-color: #3498DB;
 }
 .line{
 	height:4px;
-	background-color:red;
-}
-.one{
-	padding:20px;
-	border: 1px solid orange;
-	border-radius: 50%;
-}
-.top{
-	display:flex;
-	flex-flow: row wrap;
-	width:50%;
-	align-item:center;
+	background-color:#ccc;
 }
 .line{
 	flex-grow:1;
 }
+.buttons {
+  display: flex;
+	  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: #3498DB;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px  20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
